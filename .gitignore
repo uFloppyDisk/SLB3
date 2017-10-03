@@ -1,5 +1,14 @@
+# PyCharm stuff
 .idea/
+
+# Byte-compiled / optimized / DLL files
 __pycache__/
-cfg/
+*.py[cod]
+*$py.class
+
+# Sublime
 *.sublime*
+
+# Config and log files
+cfg/
 *.log
