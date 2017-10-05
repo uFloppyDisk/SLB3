@@ -16,13 +16,13 @@ def whisper(irc, msgvars):
 def usernotice(irc, msgvars):
 	if msgvars["msg-id"] == "sub":
 		irc.send_privmsg(
-				f"NEW S U B legsHYPE Thank you @{msgvar['display-name']} for the subberino and welcome to the StrongLegsAcademy legsLOVE",
+				f"NEW SUB legsHYPE Thank you @{msgvar['display-name']} for the subberino and welcome to the Strong Legs Academy legsLOVE legsHYPE legsLOVE legsHYPE",
 				me=True
 			)
 
 	elif msgvars["msg-id"] == "resub":
 		irc.send_privmsg(
-				f"REEEE S U B legsHYPE Thank you @{msgvars['display-name']} for the {msgvars['msg-param-months']} month resubscription. Thank you for the continued support! :D legsLOVE",
+				f"legsHYPE Thank you @{msgvars['display-name']} for the {msgvars['msg-param-months']} month REEEEEEESUB. Thank you for the continued support! legsHYPE legsLOVE legsHYPE",
 				me=True
 			)
 
