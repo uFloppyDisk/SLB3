@@ -16,7 +16,7 @@ def whisper(irc, msgvars):
 def usernotice(irc, msgvars):
 	if msgvars["msg-id"] == "sub":
 		irc.send_privmsg(
-				f"NEW SUB legsHYPE Thank you @{msgvar['display-name']} for the subberino and welcome to the Strong Legs Academy legsLOVE legsHYPE legsLOVE legsHYPE",
+				f"NEW SUB legsHYPE Thank you @{msgvars['display-name']} for the subberino and welcome to the Strong Legs Academy legsLOVE legsHYPE legsLOVE legsHYPE",
 				me=True
 			)
 
