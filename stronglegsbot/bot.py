@@ -52,7 +52,7 @@ class BOT(object):
             return
 
         log.debug("Dispatching...")
-        feedback = dispatch_func(msgvars)
+        feedback = dispatch_func(self.irc, msgvars)
         return feedback
 
     def main(self):
@@ -70,10 +70,6 @@ class BOT(object):
                 msgvars = stronglegsbot.parse.parse(msgtype, line)
                 # parse = getattr(stronglegsbot.parse, f"parse_{msgtype}")
                 # msgvars = parse(line)
-
-                if msgvars["msgtype"] == "ping":
-                    self.irc.send_raw("PONG :tmi.twitch.tv\r\n")
-                    log.debug("responded to server ping message")
 
                 if msgvars["msgtype"]:
                     feedback = self.dispatch(msgvars)
